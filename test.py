@@ -43,3 +43,36 @@
 
 # # df.to_csv(data)
 
+
+
+
+
+import logging as lg
+import os 
+
+from datetime import datetime 
+
+Jangir = f"{datetime.now().strftime('%m_%d_%Y_%H_%M_%S')}.log"
+
+djangir = os.path.join(os.getcwd(),"Dinesh",Jangir)
+
+os.makedirs(djangir,exist_ok=True)
+
+LOG_FILE_PATH = os.path.join(djangir,Jangir)
+
+os.makedirs(LOG_FILE_PATH)
+
+lg.basicConfig(
+    filename=LOG_FILE_PATH,
+    format="[%(asctime)s] %(lineno)d %(name)s - %(levelname)s -%(message)s",
+    level=lg.INFO,
+
+)
+
+if __name__=='__main__':
+    try:
+        lg.info("Enter the try block")
+        a=1/0
+        print("This will not be printed")
+    except Exception as e:
+        print("Not logging") 

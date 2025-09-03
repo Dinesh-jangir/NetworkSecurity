@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Data_Science_project/NetworkSecurity/mlruns/0/81b3977e15bf48739507be7f9ae14cd4/artifacts
+end_time: 1756899606305
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 81b3977e15bf48739507be7f9ae14cd4
+run_name: wistful-boar-227
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1756899601399
+status: 3
+tags: []
+user_id: Dinesh
